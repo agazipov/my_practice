@@ -1,0 +1,12 @@
+button {
+    height: 30px;
+    width: 30px;
+    padding: 12px;
+
+    background-color: white;
+    border-radius: 50%;
+    
+    background-image: url(../../../public/slider/upbutton.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
