@@ -1,26 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Canvas from "./components/Canvas/Canvas";
+import { Slider } from "./components/Slider/Slider"
+import { Slider_2 } from "./components/Slider_2/Slider_2"
+import { Task } from "./components/Task/Task"
+import { createBlock } from "./data/data";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+	return (
+		<>
+			<Canvas width={500} height={300} block={createBlock(500, 300)} />
+
+			<Slider />
+
+			<Task />
+
+			<Slider_2 />
+		</>
+	);
 }
 
 export default App;
